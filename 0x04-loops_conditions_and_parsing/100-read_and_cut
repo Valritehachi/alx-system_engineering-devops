@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#code that shows the content of a file. 
+
+myfile="/etc/passwd"
+
+while IFS= read -r line
+do
+    fields=$(echo "$line" | cut -d":" -f1,3,6)
+    echo "$fields"
+done < "$myfile"
