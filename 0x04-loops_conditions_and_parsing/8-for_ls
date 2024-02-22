@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#a code that will show the current directory.
+
+mylist=$(ls)
+
+for item in $mylist;
+do
+  part_after_dash=$(echo "$item" | cut -d '-' -f2)
+  echo "$part_after_dash"
+done

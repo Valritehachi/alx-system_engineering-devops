@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# A script that displays text 
+# A code that displays text 
 
 for ((count = 1; count <= 10; count++))
 do
