@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #code that shows the content of a file. 
 
 myfile="/etc/passwd"

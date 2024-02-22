@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #code that displays numbers
 
 for num in {1..100}
