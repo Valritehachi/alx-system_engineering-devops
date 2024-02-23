@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# a code that shows running processes
+
+ps -faux
