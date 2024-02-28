@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# a code that listens to localhost
+
+nc -l localhost 98
