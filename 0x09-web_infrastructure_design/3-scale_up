@@ -1,0 +1,16 @@
+Load Balancer (HAProxy) with HTTPS Certificate: Distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed. The HTTPS certificate provides secure, encrypted connections.
+
+Firewalls: Positioned before the web servers to protect the internal network by filtering incoming and outgoing traffic based on a set of security rules.
+
+Web Servers (Nginx): Serve web content. Nginx is known for its high performance and reverse proxy capabilities.
+
+Application Servers: Run the application code, often connecting to a database to retrieve or update information.
+
+Code Base: Contains the application's source code.
+
+Monitoring Clients: Collect and send data about the application’s performance to a monitoring service.
+
+MySQL Database with Master-Master Replication: Stores data and allows for writes to be made to multiple servers for load distribution and redundancy.
+
+Monitoring Service (SumoLogic): Aggregates logs and performance metrics to analyze and alert on system health.
+

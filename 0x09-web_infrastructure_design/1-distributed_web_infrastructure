@@ -1,0 +1,25 @@
+User: Initiates requests via a web browser.
+Internet: The global network connecting users to services.
+DNS Entry (foobar.com): Resolves the domain name to an IP address.
+Load Balancer (HAProxy): Distributes incoming traffic across two web servers for load balancing and redundancy. It ensures no single server bears too much load, which can improve performance and availability.
+Additional Elements:
+
+Each Web Server (Nginx) serves the application's content to users. Adding more web servers can handle increased traffic.
+Application Servers process the business logic of the application.
+Databases (MySQL): The primary stores data; the replica allows for read scalability and data backup.
+
+Load manager algorithm is round-robin, Active-Active setting means that  all servers handle traffic. 
+
+Primary-Replica setup involves a primary database handling writes and replicas used for read operations or backup.
+
+Primary vs. Replica Node:
+The primary handles all write operations, while replicas are usually read-only.
+Infrastructure Issues:
+
+SPOFs (Single Points of Failure): If the load balancer or primary database fails, the entire system could go down.
+
+Security Issues: Without firewalls or HTTPS, data could be vulnerable to attacks.
+
+Monitoring: Not mentioned but essential for maintaining system health.
+This setup aims for balanced load distribution and redundancy but has points that need addressing to ensure reliability and security.
+

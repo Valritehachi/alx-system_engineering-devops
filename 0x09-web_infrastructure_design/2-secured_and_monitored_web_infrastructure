@@ -1,0 +1,9 @@
+Firewalls: They act as security barriers, controlling the inbound and outbound network traffic based on an applied rule set, protecting the systems from attacks or unauthorized access.
+HTTPS Traffic: Traffic served over HTTPS means data transmitted between the user and the server is encrypted, enhancing security and protecting sensitive information.
+Monitoring Client & SumoLogic: The monitoring client collects data about the application’s performance and health, which is sent to a centralized monitoring tool like SumoLogic for analysis, alerting, and visualization.
+SSL Termination at Load Balancer: While offloading CPU-intensive encryption and decryption tasks from the web servers is efficient, it can be a security risk if the internal network is compromised.
+Single MySQL Write Server: Having only one server handling write operations creates a single point of failure and may become a bottleneck as the load increases.
+Homogeneous Servers: Servers with the same components (database, web server, application server) can lead to resource contention, and if one service is compromised, others are at risk too.
+For monitoring web server QPS (Queries Per Second), configure the monitoring tool to track and alert based on the web server's access logs or metrics.
+In the infrastructure, there should be provisions to mitigate these issues, like adding read replicas for the database, segregating services, employing WAF (Web Application Firewall) at the load balancer, and ensuring encrypted connections within the internal network.
+
