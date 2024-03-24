@@ -1,0 +1,16 @@
+User: A user interacts with the application by requesting a webpage or service from their browser or app.
+
+Internet: This is a network of interconnected systems that facilitates data transfer across the world.The user's request travels through the internet.
+
+Domain Name System (DNS): foobar.com represents the application's domain name. The DNS resolves this human-readable address into an IP address.
+
+Web Server (Nginx): The request from the user, having passed through the firewall, reaches the web server. Nginx is a popular open-source web server that can also act as a reverse proxy, load balancer, and HTTP cache. It serves the user's request by sending back the requested web pages, usually static content like HTML, CSS, and JavaScript files.
+
+Application Server: The application server runs your backend code, which could be written in languages like Python, Ruby, or JavaScript (Node.js). It might handle things like user authentication, data processing, and business logic.
+
+Code Base: This is the application's code, which defines how it behaves in response to user requests. It usually includes the business logic, data processing, and interaction with the database.
+
+Database (MySQL): The database stores all the data the application needs to function. MySQL is a popular relational database management system. When the user does something that requires data retrieval or storage (like logging in or posting a comment), the application server will interact with the database to fetch or save this data.
+
+
+Each component is a single point of failure (SPOF). If any one component fails then the system will not work. There is alo downtime if we need to perform maintenance or upgrade the sofware . Welimited in how much we can scale because it is only a single server.
