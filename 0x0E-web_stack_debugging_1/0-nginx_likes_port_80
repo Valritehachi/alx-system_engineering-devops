@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Go to the nginx folder sites
+cd /etc/nginx/sites-enabled/ || exit;
+# Delete a file from nginx
+rm default;
+#create for the nginx server
+ln -s /etc/nginx/sites-available/default default;
+# Restart Nginx
+service nginx restart                                                                                                                         
