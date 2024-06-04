@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ 
-a recursive function that queries the Reddit API, parses the title of all hot articles
+a recursive function that queries the Reddit API, and titles of articles
 """
 
 
