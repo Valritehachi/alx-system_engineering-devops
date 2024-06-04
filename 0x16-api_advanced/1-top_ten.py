@@ -4,7 +4,7 @@ import requests
 
 
 def top_ten(subreddit):
-    """ a function that queries the Reddit API and prints the titles.""
+    """ a function that queries the Reddit API and prints the titles."""
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
         "User-Agent": "0x16-api_advanced:project:\
