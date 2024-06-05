@@ -48,4 +48,8 @@ Ensure all deployment steps are documented and include verification of key confi
 
 Schedule training sessions focused on load balancer configuration and management.
 Conduct regular drills to simulate and resolve load balancer-related issues.
-By addressing these areas, we aim to prevent similar outages in the future and ensure a more resilient and stable deployment process.
+By addressing these areas, we aim to prevent similar outages in the future and ensure a more resilient and stable deployment process
+
+image url.
+
+https://docs.google.com/document/d/1MhVw_D4hRiihvZCkY3LM1Jv755vymesoqoRmiwSWjdw/edit?usp=sharing
